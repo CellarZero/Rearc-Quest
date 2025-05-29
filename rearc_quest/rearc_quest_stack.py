@@ -68,11 +68,3 @@ class RearcQuestStack(Stack):
             s3.EventType.OBJECT_CREATED_PUT, 
             notification, 
             s3.NotificationKeyFilter(prefix="population-data/", suffix=".json"))
-
-        # The code that defines your stack goes here
-
-        # example resource
-        # queue = sqs.Queue(
-        #     self, "RearcQuestQueue",
-        #     visibility_timeout=Duration.seconds(300),
-        # )
